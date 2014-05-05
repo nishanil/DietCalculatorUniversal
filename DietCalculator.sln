@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.Droid", "Die
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.iOS", "DietCalculator.iOS\DietCalculator.iOS.csproj", "{2E767A03-6A3A-4D7C-A1DC-E9FE8DA3CD51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.Windows", "DietCalculator\DietCalculator.Windows\DietCalculator.Windows.csproj", "{B887BE89-ADC2-422B-B71B-4871FDE15DB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.Windows", "DietCalculator.Windows\DietCalculator.Windows.csproj", "{B887BE89-ADC2-422B-B71B-4871FDE15DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.WindowsPhone", "DietCalculator\DietCalculator.WindowsPhone\DietCalculator.WindowsPhone.csproj", "{DAA36D62-D256-431F-90C7-623D2E2298CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.WindowsPhone", "DietCalculator.WindowsPhone\DietCalculator.WindowsPhone.csproj", "{DAA36D62-D256-431F-90C7-623D2E2298CC}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -192,8 +192,6 @@ Global
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|ARM.Deploy.0 = Debug|ARM
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{B887BE89-ADC2-422B-B71B-4871FDE15DB7}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
@@ -258,8 +256,6 @@ Global
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|ARM.Deploy.0 = Debug|ARM
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{DAA36D62-D256-431F-90C7-623D2E2298CC}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
