@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="DietCalculator.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DietCalculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- TitlePanel -->
+        <StackPanel Grid.Row="0" Margin="24,17,0,28">
+            <TextBlock Text="DIET CALCULATOR" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
+            <TextBlock Text="your details" Margin="0,12,0,0" Style="{ThemeResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot"  Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Age:"></TextBlock>
+                    <TextBox InputScope="Number" x:Name="txtAge" PlaceholderText="ex. 45"/>
+                    <TextBlock Text="Gender:"></TextBlock>
+                    <ComboBox Name="listGender" SelectedIndex="0">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </ComboBox>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Height &amp; Weight" FontSize="40" Padding="0"></TextBlock>
+                        <TextBlock Text="Weight (in kg):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtWeight" PlaceholderText="ex. 65"/>
+                        <TextBlock Text="Height (in cm):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtHeight" PlaceholderText="ex. 170"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Waist &amp; Hips" FontSize="40" Padding="0"></TextBlock>
+                        <TextBlock Text="Waist (in cm):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtWaist" PlaceholderText="ex. 47"/>
+                        <TextBlock Text="Hips (in cm):" Name="tblHips"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtHips" PlaceholderText="ex. 88"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Ideal Weight &amp; BMI" FontSize="40" Padding="0"></TextBlock>
+                        <TextBlock Text="Ideal Weight (in kg):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtIdealWeight" PlaceholderText="ex. 45"/>
+                        <TextBlock Text="BMI (in kg/m2):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtIdealBMI" PlaceholderText="ex. 18"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Cholestrol &amp; HDL" FontSize="40" Padding="0"></TextBlock>
+                        <TextBlock Text="Cholestrol (in mmol/L):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtCholestrol" PlaceholderText="ex. 5.17"/>
+                        <TextBlock Text="HDL (in mmol/L):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtHDL" PlaceholderText="ex. 1.56"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Neck" FontSize="40" Padding="0"></TextBlock>
+                        <TextBlock Text="Neck (in cm):"></TextBlock>
+                        <TextBox InputScope="Number" Name="txtNeck" PlaceholderText="ex. 30"/>
+                    </StackPanel>
+                    <TextBlock Text="Level of Activity:"></TextBlock>
+                    <ComboBox Name="listActivity" SelectedIndex="0">
+                        <x:String>Sedentary</x:String>
+                        <x:String>Active</x:String>
+                        <x:String>Moderate</x:String>
+                    </ComboBox>
+                    <Button Name="btnCalculate" Click="btnCalculate_Click" Margin="2,2,2,2">Calculate</Button>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
