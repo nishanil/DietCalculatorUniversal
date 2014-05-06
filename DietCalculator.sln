@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DietCalculator.Shared", "DietCalculator.Core\DietCalculator.Shared.shproj", "{12B8E7DB-021A-4C0F-858F-747285C20033}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DietCalculator.Shared", "DietCalculator.Shared\DietCalculator.Shared.shproj", "{12B8E7DB-021A-4C0F-858F-747285C20033}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.Droid", "DietCalculator.Droid\DietCalculator.Droid.csproj", "{64373EF4-B798-43EC-A7BF-818E047ACA80}"
 EndProject
@@ -15,11 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.WindowsPhone
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		DietCalculator.Core\DietCalculator.Core.projitems*{2e767a03-6a3a-4d7c-a1dc-e9fe8da3cd51}*SharedItemsImports = 4
-		DietCalculator.Core\DietCalculator.Core.projitems*{64373ef4-b798-43ec-a7bf-818e047aca80}*SharedItemsImports = 4
-		DietCalculator.Core\DietCalculator.Core.projitems*{b887be89-adc2-422b-b71b-4871fde15db7}*SharedItemsImports = 4
-		DietCalculator.Core\DietCalculator.Core.projitems*{12b8e7db-021a-4c0f-858f-747285c20033}*SharedItemsImports = 13
-		DietCalculator.Core\DietCalculator.Core.projitems*{daa36d62-d256-431f-90c7-623d2e2298cc}*SharedItemsImports = 4
+		DietCalculator.Shared\DietCalculator.Core.projitems*{12b8e7db-021a-4c0f-858f-747285c20033}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
