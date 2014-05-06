@@ -1,4 +1,4 @@
-Diet Calculator (Universal Apps Support)
+Diet Calculator (Universal Windows Apps Support)
 ======================
 
 DietCalculator built for 4 mobile platforms(iOS, Android, Windows Phone 8.1, Windows 8.1) using Visual Studio Shared Project.
