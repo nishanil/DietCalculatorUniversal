@@ -18,10 +18,24 @@
 	<key>CFBundleDisplayName</key>
 	<string>Diet Calculator</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.nnish.DietCalculator</string>
+	<string>com.nnish.DietCalc</string>
 	<key>CFBundleVersion</key>
-	<string></string>
+	<string>0.1</string>
 	<key>NSMainNibFile</key>
 	<string></string>
+	<key>NSMainNibFile~ipad</key>
+	<string></string>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array/>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
+		<string>Default-568h@2x.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Portrait~ipad.png</string>
+		<string>Default-Portrait@2x~ipad.png</string>
+	</array>
 </dict>
 </plist>
