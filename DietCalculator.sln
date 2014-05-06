@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DietCalculator.Core", "DietCalculator.Core\DietCalculator.Core.shproj", "{12B8E7DB-021A-4C0F-858F-747285C20033}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DietCalculator.Shared", "DietCalculator.Core\DietCalculator.Shared.shproj", "{12B8E7DB-021A-4C0F-858F-747285C20033}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.Droid", "DietCalculator.Droid\DietCalculator.Droid.csproj", "{64373EF4-B798-43EC-A7BF-818E047ACA80}"
 EndProject
