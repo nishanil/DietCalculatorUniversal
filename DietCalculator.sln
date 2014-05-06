@@ -15,7 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DietCalculator.WindowsPhone
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DietCalculator.Shared\DietCalculator.Core.projitems*{2e767a03-6a3a-4d7c-a1dc-e9fe8da3cd51}*SharedItemsImports = 4
+		DietCalculator.Shared\DietCalculator.Core.projitems*{64373ef4-b798-43ec-a7bf-818e047aca80}*SharedItemsImports = 4
+		DietCalculator.Shared\DietCalculator.Core.projitems*{b887be89-adc2-422b-b71b-4871fde15db7}*SharedItemsImports = 4
 		DietCalculator.Shared\DietCalculator.Core.projitems*{12b8e7db-021a-4c0f-858f-747285c20033}*SharedItemsImports = 13
+		DietCalculator.Shared\DietCalculator.Core.projitems*{daa36d62-d256-431f-90c7-623d2e2298cc}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

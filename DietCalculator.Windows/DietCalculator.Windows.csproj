@@ -142,6 +142,7 @@
   </PropertyGroup>
   <Import Project="..\..\DietCalculator.Core\DietCalculator.Core.projitems" Label="Shared" Condition="Exists('..\..\DietCalculator.Core\DietCalculator.Core.projitems')" />
   <Import Project="..\DietCalculator.Core\DietCalculator.Core.projitems" Label="Shared" Condition="Exists('..\DietCalculator.Core\DietCalculator.Core.projitems')" />
+  <Import Project="..\DietCalculator.Shared\DietCalculator.Core.projitems" Label="Shared" Condition="Exists('..\DietCalculator.Shared\DietCalculator.Core.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

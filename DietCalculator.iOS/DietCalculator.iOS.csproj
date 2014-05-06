@@ -107,6 +107,7 @@
     <Compile Include="Elements\DietRadioElement.cs" />
   </ItemGroup>
   <Import Project="..\DietCalculator.Core\DietCalculator.Core.projitems" Label="Shared" Condition="Exists('..\DietCalculator.Core\DietCalculator.Core.projitems')" />
+  <Import Project="..\DietCalculator.Shared\DietCalculator.Core.projitems" Label="Shared" Condition="Exists('..\DietCalculator.Shared\DietCalculator.Core.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
