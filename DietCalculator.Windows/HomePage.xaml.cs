@@ -171,8 +171,8 @@ namespace DietCalculator
             resultsControl.DataContext = null;
             resultsControl.DataContext = model;
             resultsControl.Visibility = Visibility.Visible;
-            MainContent.Width = 2600;
-            MainScroll.ChangeView(1000, null, null);
+            MainContent.Width = 3000;
+            MainScroll.ChangeView(1400, null, null);
         }
     }
 }

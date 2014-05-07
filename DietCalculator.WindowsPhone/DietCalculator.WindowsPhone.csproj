@@ -22,9 +22,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <DefineConstants>NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -97,10 +98,22 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\LockScreen.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\SplashScreens\SplashScreenImage.screen-720pWhite.png" />
+    <Content Include="Assets\SplashScreens\SplashScreenImage.screen-WVGAWhite.png" />
+    <Content Include="Assets\SplashScreens\SplashScreenImage.screen-WXGAWhite.png" />
+    <Content Include="Assets\SplashScreens\SplashScreenImageWhite.png" />
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\Start\FlipCycleTileMediumB.png" />
+    <Content Include="Assets\Start\FlipCycleTileSmallB.png" />
+    <Content Include="Assets\Start\FlipCycleTileWideB.png" />
+    <Content Include="Assets\Start\IconicTileMediumB.png" />
+    <Content Include="Assets\Start\IconicTileSmallB.png" />
+    <Content Include="Assets\StoreImage\CatalogueImageBlue.png" />
+    <Content Include="Assets\StoreImage\MerchandizingImage.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
   </ItemGroup>

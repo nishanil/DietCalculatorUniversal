@@ -7,6 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="Headerstyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#0099CC" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="VerticalAlignment" Value="Bottom" />
+            <Setter Property="Padding"  Value="0"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style x:Key="SubHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Page.Resources>
 
     <Grid x:Name="LayoutRoot">
 
@@ -22,7 +42,7 @@
         </Grid.RowDefinitions>
 
         <!-- TitlePanel -->
-        <StackPanel Grid.Row="0" Margin="24,17,0,28">
+        <StackPanel Grid.Row="0" Margin="12,12,0,12">
             <TextBlock Text="DIET CALCULATOR" Style="{ThemeResource TitleTextBlockStyle}" Typography.Capitals="SmallCaps"/>
             <TextBlock Text="your details" Margin="0,12,0,0" Style="{ThemeResource HeaderTextBlockStyle}"/>
         </StackPanel>
@@ -31,55 +51,71 @@
         <Grid Grid.Row="1" x:Name="ContentRoot"  Margin="12,0,12,0">
             <ScrollViewer>
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Age:"></TextBlock>
+                    <TextBlock Text="Age &amp; Gender" Style="{StaticResource Headerstyle}"></TextBlock>
+                    <TextBlock Text="Age:" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                     <TextBox InputScope="Number" x:Name="txtAge" PlaceholderText="ex. 45"/>
-                    <TextBlock Text="Gender:"></TextBlock>
+                    <TextBlock Text="Gender:" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                     <ComboBox Name="listGender" SelectedIndex="0">
                         <x:String>Male</x:String>
                         <x:String>Female</x:String>
                     </ComboBox>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Height &amp; Weight" FontSize="40" Padding="0"></TextBlock>
-                        <TextBlock Text="Weight (in kg):"></TextBlock>
+                        <TextBlock Text="Height &amp; Weight" Style="{StaticResource Headerstyle}"></TextBlock>
+                        <TextBlock Text="Weight (in kg):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtWeight" PlaceholderText="ex. 65"/>
-                        <TextBlock Text="Height (in cm):"></TextBlock>
+                        <TextBlock Text="Height (in cm):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtHeight" PlaceholderText="ex. 170"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Waist &amp; Hips" FontSize="40" Padding="0"></TextBlock>
-                        <TextBlock Text="Waist (in cm):"></TextBlock>
+                        <TextBlock Text="Waist &amp; Hips"  Style="{StaticResource Headerstyle}"></TextBlock>
+                        <TextBlock Text="Waist (in cm):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtWaist" PlaceholderText="ex. 47"/>
                         <TextBlock Text="Hips (in cm):" Name="tblHips"></TextBlock>
                         <TextBox InputScope="Number" Name="txtHips" PlaceholderText="ex. 88"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Ideal Weight &amp; BMI" FontSize="40" Padding="0"></TextBlock>
-                        <TextBlock Text="Ideal Weight (in kg):"></TextBlock>
+                        <TextBlock Text="Ideal Weight &amp; BMI"  Style="{StaticResource Headerstyle}"></TextBlock>
+                        <TextBlock Text="Ideal Weight (in kg):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtIdealWeight" PlaceholderText="ex. 45"/>
-                        <TextBlock Text="BMI (in kg/m2):"></TextBlock>
+                        <TextBlock Text="BMI (in kg/m2):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtIdealBMI" PlaceholderText="ex. 18"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Cholestrol &amp; HDL" FontSize="40" Padding="0"></TextBlock>
-                        <TextBlock Text="Cholestrol (in mmol/L):"></TextBlock>
+                        <TextBlock Text="Cholestrol &amp; HDL"  Style="{StaticResource Headerstyle}"></TextBlock>
+                        <TextBlock Text="Cholestrol (in mmol/L):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtCholestrol" PlaceholderText="ex. 5.17"/>
-                        <TextBlock Text="HDL (in mmol/L):"></TextBlock>
+                        <TextBlock Text="HDL (in mmol/L):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtHDL" PlaceholderText="ex. 1.56"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Neck" FontSize="40" Padding="0"></TextBlock>
-                        <TextBlock Text="Neck (in cm):"></TextBlock>
+                        <TextBlock Text="Neck"  Style="{StaticResource Headerstyle}"></TextBlock>
+                        <TextBlock Text="Neck (in cm):" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                         <TextBox InputScope="Number" Name="txtNeck" PlaceholderText="ex. 30"/>
                     </StackPanel>
-                    <TextBlock Text="Level of Activity:"></TextBlock>
+                    <TextBlock Text="Level of Activity:" Style="{StaticResource SubHeaderStyle}"></TextBlock>
                     <ComboBox Name="listActivity" SelectedIndex="0">
                         <x:String>Sedentary</x:String>
                         <x:String>Active</x:String>
                         <x:String>Moderate</x:String>
                     </ComboBox>
-                    <Button Name="btnCalculate" Click="btnCalculate_Click" Margin="2,2,2,2">Calculate</Button>
+                    <Button Name="btnCalculate"  Margin="2,2,2,10">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border BorderBrush="#0099CC" Background="#0099CC" CornerRadius="20,20,20,20" BorderThickness="2">
+                                    <Button Click="btnCalculate_Click"  Content="Calculate"
+                              Background="{TemplateBinding Background}"
+                              Height="65"
+                              Width="355"
+                              FontSize="{TemplateBinding FontSize}"
+                              BorderBrush="#0099CC">
+                                        
+                                    </Button>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </StackPanel>
             </ScrollViewer>
         </Grid>

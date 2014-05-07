@@ -178,5 +178,7 @@ namespace DietCalculator
             
             Frame.Navigate(typeof(ResultsPage));
         }
+
+
     }
 }
