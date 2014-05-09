@@ -18,6 +18,7 @@ Refer these blogs for detailed explanation:
 - [Porting existing .NET apps to iOS](http://blog.xamarin.com/porting-existing-.net-apps-to-ios/)
 - [Porting existing .NET apps to Android](http://blog.xamarin.com/porting-existing-.net-apps-to-android/)
 - [Porting existing .NET apps to four mobile platforms](http://blog.xamarin.com/porting-existing-.net-apps-to-four-mobile-platforms-with-pcl/)
+- [Easy Code Sharing across iOS, Android, and Windows ](http://blog.xamarin.com/share-code-across-ios-android-and-universal-windows-apps-using-shared-projects/E)
 
 ##Requirements for building the project
 
